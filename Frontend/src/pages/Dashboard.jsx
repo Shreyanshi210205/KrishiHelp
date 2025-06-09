@@ -1,7 +1,9 @@
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 import "./Dashboard.css";
 
 const Dashboard = () => {
+  const { t } = useTranslation();
   const [formData, setFormData] = useState({
     waterUsage: "",
     fertilizerUsed: "",
@@ -22,22 +24,19 @@ const Dashboard = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert("Your analysis request has been submitted!");
+    alert(t("dashboard.alertMessage"));
   };
 
   return (
     <div className="dashboard-container">
       <section className="welcome-section">
-        <h1>Welcome to Your Dashboard</h1>
-        <p>
-          Track your agricultural progress. Fill the weekly form below to get
-          insights and analysis.
-        </p>
+        <h1>{t("dashboard.title")}</h1>
+        <p>{t("dashboard.subtitle")}</p>
       </section>
 
       <section className="form-section">
         <form className="analysis-form" onSubmit={handleSubmit}>
-          <label>Water Used (litres)</label>
+          <label>{t("dashboard.waterUsage")}</label>
           <input
             type="number"
             name="waterUsage"
@@ -46,7 +45,7 @@ const Dashboard = () => {
             required
           />
 
-          <label>Fertilizer Used</label>
+          <label>{t("dashboard.fertilizerUsed")}</label>
           <input
             type="text"
             name="fertilizerUsed"
@@ -55,7 +54,7 @@ const Dashboard = () => {
             required
           />
 
-          <label>Fertilizer Quantity (kg)</label>
+          <label>{t("dashboard.fertilizerQty")}</label>
           <input
             type="number"
             name="fertilizerQty"
@@ -64,7 +63,7 @@ const Dashboard = () => {
             required
           />
 
-          <label>Upload Crop Image</label>
+          <label>{t("dashboard.cropImage")}</label>
           <input
             type="file"
             name="cropImage"
@@ -73,7 +72,7 @@ const Dashboard = () => {
             required
           />
 
-          <label>Farm Location</label>
+          <label>{t("dashboard.farmLocation")}</label>
           <input
             type="text"
             name="farmLocation"
@@ -82,7 +81,7 @@ const Dashboard = () => {
             required
           />
 
-          <label>Additional Details</label>
+          <label>{t("dashboard.additionalDetails")}</label>
           <textarea
             name="additionalDetails"
             rows="4"
@@ -91,7 +90,7 @@ const Dashboard = () => {
           ></textarea>
 
           <button type="submit" className="submit-btn">
-            Get Your Analysis Done
+            {t("dashboard.submit")}
           </button>
         </form>
       </section>

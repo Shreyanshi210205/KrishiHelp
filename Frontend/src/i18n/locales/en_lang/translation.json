@@ -96,6 +96,35 @@
     "step_5": "🌾 Easy to use and regional-language ready",
     "start_using": "Start Using →"
   },
+  
+  "register": {
+    "login": "Login",
+    "register": "Register",
+    "fullName": "Full Name",
+    "email": "Email",
+    "password": "Password",
+    "noAccount": "Don't have an account?",
+    "alreadyHaveAccount": "Already have an account?",
+    "loggingIn": "Logging in",
+    "registering": "Registering"
+  },
+
+
+  
+  "dashboard": {
+    "title": "Welcome to Your Dashboard",
+    "subtitle": "Track your agricultural progress. Fill the weekly form below to get insights and analysis.",
+    "waterUsage": "Water Used (litres)",
+    "fertilizerUsed": "Fertilizer Used",
+    "fertilizerQty": "Fertilizer Quantity (kg)",
+    "cropImage": "Upload Crop Image",
+    "farmLocation": "Farm Location",
+    "additionalDetails": "Additional Details",
+    "submit": "Get Your Analysis Done",
+    "alertMessage": "Your analysis request has been submitted!"
+  },
+
+
 
   "footer": {
     "rights": "© {{year}} KrishiHelp. All rights reserved.",
