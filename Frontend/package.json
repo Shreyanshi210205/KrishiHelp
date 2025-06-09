@@ -10,6 +10,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+    "i18next": "^25.2.1",
+=======
+>>>>>>> 9dc27f3 (Translated Dashboard and Register pages with Hindi and English support)
+>>>>>>> 40c9921 (Added chatbot floating message translation support in English and Hindi)
     "i18next-browser-languagedetector": "^8.1.0",
     "lucide-react": "^0.513.0",
     "react": "^19.1.0",

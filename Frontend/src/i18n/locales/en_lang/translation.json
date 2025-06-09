@@ -95,7 +95,15 @@
     "step_3": "🗣 Ask a question by typing or speaking",
     "step_4": "🔊 Receive reply in voice + text format",
     "step_5": "🌾 Easy to use and regional-language ready",
-    "start_using": "Start Using →"
+    "start_using": "Start Using →",
+
+    "greeting1": "Hi, I'm",
+    "name": "Bhoomi AI",
+    "description": "I'm your intelligent farming assistant here to guide you with tips, tools, and support for a better, greener future. 🌿",
+    "button": "💬 Let's Chat",
+
+    "floatMessage": "Hi! I am Bhoomi. Your AI chatbot",
+    "altText": "Chatbot"
   },
   
   "register": {
@@ -109,8 +117,6 @@
     "loggingIn": "Logging in",
     "registering": "Registering"
   },
-
-
   
   "dashboard": {
     "title": "Welcome to Your Dashboard",
@@ -125,10 +131,11 @@
     "alertMessage": "Your analysis request has been submitted!"
   },
 
+  
+  "appName": "KrishiHelp",
+  "tagline": "Your smart farming assistant",
+  "githubAlt": "GitHub",
+  "copyright": "© {{year}} KrishiHelp"
 
 
-  "footer": {
-    "rights": "© {{year}} KrishiHelp. All rights reserved.",
-    "language": "Language"
-  }
 }

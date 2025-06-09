@@ -85,9 +85,11 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="our-team">
-        <div className="heading-team">{t("home.team_heading")}</div>
-        <img src={team} alt="" />
+
+      {/* Chatbot Floating Button */}
+      <div className="chatbot-float" onClick={() => navigate("/chatbot")}>
+        <div className="chatbot-bubble">{t("chatbot.floatMessage")}</div>
+        <img src={chatbotIcon} alt={t("chatbot.altText")} />
       </div>
     </div>
   );
