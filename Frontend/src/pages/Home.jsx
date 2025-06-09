@@ -87,7 +87,7 @@ const Home = () => {
         </div>
       </div>
         <div className="our-team">
-        <div className="heading-team">Our Team</div>
+        <div className="heading-team">{t("home.team_heading")}</div>
         <img src={team} alt="" />
       </div>
       {/* Chatbot Floating Button */}
