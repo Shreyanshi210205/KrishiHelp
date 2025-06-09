@@ -1,39 +1,46 @@
 import React from 'react';
 import './BotDesc.css';
 import { useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 function BotDesc() {
   const navigate = useNavigate();
+  const { t } = useTranslation();
 
   return (
     <div className="bot-desc">
-      <h2 className="bot-heading">Smart Farm Bot</h2>
+      {/* Main heading */}
+      <h2 className="bot-heading">{t('bot.title_1')}</h2>
+      
       <div className="boxes">
+        {/* Features Section */}
         <div className="features">
-          <h3>🌾 Features</h3>
+          <h3>{t('bot.features_title')}</h3>
           <ul>
-            <li>🧠 Monitor crop health using real-time sensors</li>
-            <li>💧 Automate irrigation based on soil moisture</li>
-            <li>🚜 Navigate autonomously using obstacle detection</li>
-            <li>🌿 Detect weed-prone zones via light anomalies</li>
-            <li>📈 Log and analyze environmental data</li>
+            <li>{t('bot.feature_1')}</li>
+            <li>{t('bot.feature_2')}</li>
+            <li>{t('bot.feature_3')}</li>
+            <li>{t('bot.feature_4')}</li>
+            <li>{t('bot.feature_5')}</li>
           </ul>
         </div>
 
+        {/* How to Use Section */}
         <div className="guide">
-          <h3>🔧 How to Use</h3>
+          <h3>{t('bot.how_to_use')}</h3>
           <ol>
-            <li>🔋 Insert battery pack and power on</li>
-            <li>🚜 Place at start of crop row — no setup needed</li>
-            <li>🌡 Bot begins autonomous data collection</li>
-            <li>💧 Auto-irrigates when soil is dry (blue LED = active)</li>
-            <li>📲 Optionally view data via mobile app (Bluetooth)</li>
+            <li>{t('bot.step_1')}</li>
+            <li>{t('bot.step_2')}</li>
+            <li>{t('bot.step_3')}</li>
+            <li>{t('bot.step_4')}</li>
+            <li>{t('bot.step_5')}</li>
           </ol>
         </div>
       </div>
 
+      {/* Button to navigate */}
       <button className="start-btn" onClick={() => navigate('/bot')}>
-        Start Using →
+        {t('bot.start_using')}
       </button>
     </div>
   );

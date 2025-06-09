@@ -10,10 +10,12 @@ import Dashboard from "./pages/Dashboard";
 import ChatbotDesc from "./pages/ChatbotDesc";
 import AiDesc from "./pages/AiDesc";
 import BotDesc from "./pages/BotDesc";
+import FlashCard from "./pages/FlashCard";
 
 function App() {
   return (
     <div style={{ minHeight: "100vh", display: "flex", flexDirection: "column" }}>
+      <FlashCard></FlashCard>
       <Header />
       <main style={{ flex: 1 }}>
         <Routes>
