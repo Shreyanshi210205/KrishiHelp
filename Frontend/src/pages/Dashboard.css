@@ -1,0 +1,90 @@
+/* Full-page background */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+ 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+/* Optional: full-page wrapper */
+.dashboard-container {
+  padding: 40px 20px;
+  background-color: rgba(255, 255, 255, 0.85); /* optional white overlay for readability */
+  min-height: 100vh;
+   background-image: url('../assets/images/bcg2.jpg');
+}
+
+/* Section Styles */
+.welcome-section {
+  background-color: #e8f5e9;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.welcome-section h1 {
+  color: #2e7d32;
+  margin-bottom: 10px;
+}
+
+.welcome-section p {
+  color: #4b4b4b;
+  font-size: 1.1em;
+}
+
+.form-section {
+  background-color: #fdfdfd;
+  padding: 30px;
+  border-radius: 12px;
+  border: 1px solid #dcdcdc;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  max-width: 700px;
+  margin: auto;
+}
+
+.analysis-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.analysis-form label {
+  font-weight: 600;
+  color: #333;
+}
+
+.analysis-form input,
+.analysis-form textarea {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+}
+
+.analysis-form input:focus,
+.analysis-form textarea:focus {
+  border-color: #81c784;
+  outline: none;
+}
+
+.submit-btn {
+  margin-top: 10px;
+  padding: 12px;
+  font-size: 1.1em;
+  background-color: #43a047;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #2e7d32;
+}
