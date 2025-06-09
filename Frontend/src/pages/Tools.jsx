@@ -4,34 +4,37 @@ import tool1 from '../assets/images/toolChat.png';
 import tool2 from '../assets/images/toolPredict.png';
 import tool3 from '../assets/images/toolRobot.png';
 import { useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 function Tools() {
-  const navigate =useNavigate();
+  const navigate = useNavigate();
+  const { t } = useTranslation();
+
   const toolsData = [
     {
-      title: 'Bhoomi AI chatbot',
-      description: 'Bhoomi AI understands your farm. Get real advice using your words, images, or voice.',
+      title: t('tools.tool_1.title'),
+      description: t('tools.tool_1.description'),
       image: tool1,
-      button:'/chatbot-desc',
+      button: '/chatbot-desc',
     },
     {
-      title: 'AI Farm Advisor',
-      description: 'Analyzes your data to suggest eco-friendly, resource-efficient farming practices.',
-      image:tool2,
-      button:'/ai-desc',
+      title: t('tools.tool_2.title'),
+      description: t('tools.tool_2.description'),
+      image: tool2,
+      button: '/ai-desc',
     },
     {
-      title: 'Smart Farm Bot',
-      description: 'Automatically monitors crops and waters them efficiently with no setup needed.',
+      title: t('tools.tool_3.title'),
+      description: t('tools.tool_3.description'),
       image: tool3,
-      button:'/bot-desc'
+      button: '/bot-desc',
     },
   ];
 
   return (
     <div className="tools">
       <div className="tools-section">
-      <h2 className="heading-tools">Tools For You</h2>
+        <h2 className="heading-tools">{t('tools.heading')}</h2>
       </div>
       <div className="card-container">
         {toolsData.map((tool, index) => (
@@ -41,7 +44,9 @@ function Tools() {
               <div className="card-text">
                 <h2>{tool.title}</h2>
                 <p>{tool.description}</p>
-                <button onClick={()=>navigate(tool.button)} className="start-button">Start Exploring →</button>
+                <button onClick={() => navigate(tool.button)} className="start-button">
+                  {t('tools.start_button')}
+                </button>
               </div>
             </div>
           </div>

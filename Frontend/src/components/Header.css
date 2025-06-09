@@ -33,3 +33,37 @@
 .language-icon {
   cursor: pointer;
 }
+.header-right {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.language-dropdown {
+  position: absolute;
+  top: 36px;
+  right: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  z-index: 999;
+  min-width: 100px;
+}
+
+.language-dropdown button {
+  background: none;
+  border: none;
+  padding: 10px 16px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #333;
+  text-align: left;
+  transition: background-color 0.2s;
+}
+
+.language-dropdown button:hover {
+  background-color: #f0f0f0;
+}

@@ -1,10 +1,55 @@
 .footer {
   background-color: #2e7d32;
-  color: white;
+  color: #fff;
   text-align: center;
-  padding: 12px;
-  font-size: 14px;
+  padding: 16px 20px;
+  font-size: 15px;
   width: 100vw;
   box-sizing: border-box;
-  margin-top: 0; /* Remove the extra space above */
+  margin-top: 0;
+  box-shadow: 0 4px 8px rgba(46, 125, 50, 0.4);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  user-select: none;
 }
+
+.language-toggle {
+  margin-top: 12px;
+  display: inline-flex;
+  gap: 16px;
+  justify-content: center;
+}
+
+.language-toggle button {
+  background: linear-gradient(135deg, #4caf50, #66bb6a);
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  box-shadow: 0 3px 6px rgba(102, 187, 106, 0.5);
+  transition: background 0.4s ease, box-shadow 0.3s ease, transform 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.language-toggle button:hover,
+.language-toggle button:focus {
+  background: linear-gradient(135deg, #81c784, #a5d6a7);
+  box-shadow: 0 6px 12px rgba(165, 214, 167, 0.7);
+  outline: none;
+  transform: translateY(-2px);
+}
+
+.language-toggle button:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 6px rgba(102, 187, 106, 0.5);
+}
+
+.language-toggle button svg {
+  fill: white;
+  width: 22px;
+  height: 22px;
+}
+

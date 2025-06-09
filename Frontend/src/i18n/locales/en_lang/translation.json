@@ -1,0 +1,104 @@
+{
+  "krishi_help": "KrishiHelp",
+  "nav": {
+    "home": "Home",
+    "tools": "Tools",
+    "register": "Register",
+    "chatbot": "Chatbot",
+    "dashboard": "Dashboard"
+  },
+  "home": {
+    "welcome": "Welcome to Krishi Help",
+    "intro": "Krishi Help is your one-stop platform for modern, AI-driven agricultural solutions. We empower farmers with advanced tools like crop yield prediction, autonomous farming bots, and sustainable farming assistance. Whether you’re optimizing resource usage or looking to boost productivity with technology, Krishi Help is here to guide you every step of the way.",
+    "get_started": "Get Started",
+    "services_heading": "Our Services",
+    "crop_title": "Crop Yield Prediction",
+    "crop_desc": "Use AI to forecast crop yields using satellite imagery, weather updates, and soil data for smarter farming decisions.",
+    "bots_title": "Autonomous Farming Bots",
+    "bots_desc": "Deploy AI-powered robots and drones to automate planting, harvesting, and crop monitoring to improve efficiency and reduce labor.",
+    "sustain_title": "Sustainable Farming Assistant",
+    "sustain_desc": "Optimize your water, fertilizer, and energy use with our AI assistant, promoting environmentally friendly and cost-effective agriculture.",
+    "guide_heading": "How to Use the Platform",
+    "register_title": "Register / Login",
+    "register_desc": "Create an account or log in to get started.",
+    "dashboard_title": "Dashboard",
+    "dashboard_desc": "Access your agriculture analysis and insights.",
+    "assistant_title": "AI Assistant",
+    "assistant_desc": "Ask questions about farming and get instant help.",
+    "tools_title": "Tools Section",
+    "tools_desc": "Deploy smart farming bots and tools for automation."
+  },
+  "bot": {
+    "title_1": "Smart Farm Bot",
+    "title_2": "Your Autonomous Farming Assistant",
+    "features_title": "🌾 Features",
+    "feature_1": "🧠 Monitor crop health using real-time sensors",
+    "feature_2": "💧 Automate irrigation based on soil moisture",
+    "feature_3": "🚜 Navigate autonomously using obstacle detection",
+    "feature_4": "🌿 Detect weed-prone zones via light anomalies",
+    "feature_5": "📈 Log and analyze environmental data",
+    "how_to_use": "🔧 How to Use",
+    "step_1": "🔋 Insert battery pack and power on",
+    "step_2": "🚜 Place at start of crop row — no setup needed",
+    "step_3": "🌡 Bot begins autonomous data collection",
+    "step_4": "💧 Auto-irrigates when soil is dry (blue LED = active)",
+    "step_5": "📲 Optionally view data via mobile app (Bluetooth)",
+    "start_using": "Start Using →"
+  },
+  "ai_farm_advisor": {
+    "title": "AI Farm Advisor",
+    "features_title": "🌾 Features",
+    "feature_1": "📊 Real-time farm data analysis",
+    "feature_2": "🌱 Eco-friendly suggestions for crops",
+    "feature_3": "💧 Saves water, fertilizer, and energy",
+    "feature_4": "📉 Reduces cost and waste",
+    "feature_5": "🗺 Location-based smart tips",
+    "how_to_use": "🔧 How to Use (Step-by-Step)",
+    "step_1": "📥 Open the AI Farm Advisor tool",
+    "step_2": "📝 Enter your farm info (crop, soil, etc.)",
+    "step_3": "📤 Upload sensor or manual data",
+    "step_4": "🤖 Get optimized suggestions instantly",
+    "step_5": "📈 Apply and track improvement",
+    "start_using": "Start Using →"
+  },
+  
+  "tools": {
+    "heading": "Tools For You",
+    "tool_1": {
+      "title": "Bhoomi AI chatbot",
+      "description": "Bhoomi AI understands your farm. Get real advice using your words, images, or voice."
+    },
+    "tool_2": {
+      "title": "AI Farm Advisor",
+      "description": "Analyzes your data to suggest eco-friendly, resource-efficient farming practices."
+    },
+    "tool_3": {
+      "title": "Smart Farm Bot",
+      "description": "Automatically monitors crops and waters them efficiently with no setup needed."
+    },
+    "start_button": "Start Exploring →"
+  },
+
+
+  "chatbot": {
+    "title": "Bhoomi AI",
+    "features_title": "🌾 Features",
+    "feature_1": "🤖 Understands voice, image, and text inputs",
+    "feature_2": "🧠 Gives smart, personalized farming answers",
+    "feature_3": "🌾 Detects plant diseases from photos",
+    "feature_4": "🔊 Speaks answers aloud for easy access",
+    "feature_5": "🌐 Designed for rural and regional use",
+    "how_to_use_title": "🔧 How to Use (Step-by-Step)",
+    "step_1": "✅ Choose input: Image, Text, or Voice",
+    "step_2": "📸 Upload a plant photo to detect issues",
+    "step_3": "🗣 Ask a question by typing or speaking",
+    "step_4": "🔊 Receive reply in voice + text format",
+    "step_5": "🌾 Easy to use and regional-language ready",
+    "start_using": "Start Using →"
+  },
+
+  "footer": {
+    "rights": "© {{year}} KrishiHelp. All rights reserved.",
+    "language": "Language"
+  }
+}
