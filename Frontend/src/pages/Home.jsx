@@ -8,6 +8,7 @@ import icon1 from '../assets/icons/login.png';
 import icon2 from '../assets/icons/dashboard.png';
 import icon3 from '../assets/icons/Ai Assistant.png';
 import icon4 from '../assets/icons/gear.png';
+import team from '../assets/images/ourTeam.png'
 
 import "./Home.css";
 
@@ -83,6 +84,10 @@ const Home = () => {
             <p>{t("home.tools_desc")}</p>
           </div>
         </div>
+      </div>
+      <div className="our-team">
+        <div className="heading-team">{t("home.team_heading")}</div>
+        <img src={team} alt="" />
       </div>
     </div>
   );

@@ -26,7 +26,8 @@
     "assistant_title": "AI Assistant",
     "assistant_desc": "Ask questions about farming and get instant help.",
     "tools_title": "Tools Section",
-    "tools_desc": "Deploy smart farming bots and tools for automation."
+    "tools_desc": "Deploy smart farming bots and tools for automation.",
+    "team_heading":"Our Team"
   },
   "bot": {
     "title_1": "Smart Farm Bot",
