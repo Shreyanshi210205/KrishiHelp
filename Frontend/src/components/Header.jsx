@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { Globe } from "lucide-react";
+import logo from '/logo.png'
 import "./Header.css";
 
 const Header = () => {
@@ -10,12 +11,17 @@ const Header = () => {
 
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
-    setShowDropdown(false); // close dropdown after selection
+    setShowDropdown(false); 
   };
 
   return (
     <header className="header">
       <div className="header-left">
+        <img
+    src={logo}
+    alt="KrishiHelp Logo"
+    className="logo-img"
+  />
         <h1 className="logo">{t("krishi_help")}</h1>
       </div>
 

@@ -53,7 +53,6 @@
   background-color: #5b8e3a;
 }
 
-/* Animations */
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
