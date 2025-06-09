@@ -1,6 +1,6 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-
+import './Chatbot.css'
 const Chatbot = () => {
   const { t } = useTranslation();
 

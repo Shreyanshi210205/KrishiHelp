@@ -9,6 +9,7 @@ import icon2 from '../assets/icons/dashboard.png';
 import icon3 from '../assets/icons/Ai Assistant.png';
 import icon4 from '../assets/icons/gear.png';
 import team from '../assets/images/ourTeam.png'
+import chatbotIcon from '../assets/icons/chatbotIcon.png'
 
 import "./Home.css";
 
@@ -85,7 +86,10 @@ const Home = () => {
           </div>
         </div>
       </div>
-
+        <div className="our-team">
+        <div className="heading-team">Our Team</div>
+        <img src={team} alt="" />
+      </div>
       {/* Chatbot Floating Button */}
       <div className="chatbot-float" onClick={() => navigate("/chatbot")}>
         <div className="chatbot-bubble">{t("chatbot.floatMessage")}</div>
