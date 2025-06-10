@@ -88,3 +88,13 @@ body {
 .submit-btn:hover {
   background-color: #2e7d32;
 }
+.chart-section {
+  margin-top: 2rem;
+  background: #ffffff;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.chart-wrapper {
+  margin: 2rem 0;
+}

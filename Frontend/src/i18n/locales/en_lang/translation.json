@@ -118,18 +118,34 @@
     "registering": "Registering"
   },
   
+
   "dashboard": {
-    "title": "Welcome to Your Dashboard",
-    "subtitle": "Track your agricultural progress. Fill the weekly form below to get insights and analysis.",
-    "waterUsage": "Water Used (litres)",
-    "fertilizerUsed": "Fertilizer Used",
-    "fertilizerQty": "Fertilizer Quantity (kg)",
-    "cropImage": "Upload Crop Image",
-    "farmLocation": "Farm Location",
-    "additionalDetails": "Additional Details",
-    "submit": "Get Your Analysis Done",
-    "alertMessage": "Your analysis request has been submitted!"
+    "title": "Welcome back!",
+    "subtitle": "To get your analysis done, please fill out the following details.",
+    "nitrogen": "Nitrogen (%)",
+    "phosphorus": "Phosphorus (%)",
+    "temperature": "Temperature (°C)",
+    "humidity": "Humidity (%)",
+    "rainfall": "Rainfall (mm)",
+    "submit": "Get Your Analysis"
   },
+
+
+
+  "analysis": {
+    "title": "📊 Analysis Results",
+    "alert": "No data provided! Please fill the form first.",
+    "nutrientComposition": "Nutrient Composition",
+    "environmentalFactors": "Environmental Factors",
+    "environmentStats": "Environmental Stats",
+    "nitrogen": "Nitrogen (%)",
+    "phosphorus": "Phosphorus (%)",
+    "temperature": "Temperature (°C)",
+    "humidity": "Humidity (%)",
+    "rainfall": "Rainfall (mm)",
+    "backToDashboard": "Go Back to Dashboard"
+  }
+,
 
   
   "appName": "KrishiHelp",

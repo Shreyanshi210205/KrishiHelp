@@ -1,30 +1,28 @@
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
+import { useNavigate } from "react-router-dom";
 import "./Dashboard.css";
 
 const Dashboard = () => {
   const { t } = useTranslation();
+  const navigate = useNavigate();
+
   const [formData, setFormData] = useState({
-    waterUsage: "",
-    fertilizerUsed: "",
-    fertilizerQty: "",
-    cropImage: null,
-    farmLocation: "",
-    additionalDetails: ""
+    nitrogen: "",
+    phosphorus: "",
+    temperature: "",
+    humidity: "",
+    rainfall: ""
   });
 
   const handleChange = (e) => {
-    const { name, value, files } = e.target;
-    if (name === "cropImage") {
-      setFormData({ ...formData, [name]: files[0] });
-    } else {
-      setFormData({ ...formData, [name]: value });
-    }
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert(t("dashboard.alertMessage"));
+    navigate("/analysis", { state: formData });
   };
 
   return (
@@ -36,58 +34,50 @@ const Dashboard = () => {
 
       <section className="form-section">
         <form className="analysis-form" onSubmit={handleSubmit}>
-          <label>{t("dashboard.waterUsage")}</label>
+          <label>{t("dashboard.nitrogen")}</label>
           <input
             type="number"
-            name="waterUsage"
-            value={formData.waterUsage}
+            name="nitrogen"
+            value={formData.nitrogen}
             onChange={handleChange}
             required
           />
 
-          <label>{t("dashboard.fertilizerUsed")}</label>
-          <input
-            type="text"
-            name="fertilizerUsed"
-            value={formData.fertilizerUsed}
-            onChange={handleChange}
-            required
-          />
-
-          <label>{t("dashboard.fertilizerQty")}</label>
+          <label>{t("dashboard.phosphorus")}</label>
           <input
             type="number"
-            name="fertilizerQty"
-            value={formData.fertilizerQty}
+            name="phosphorus"
+            value={formData.phosphorus}
             onChange={handleChange}
             required
           />
 
-          <label>{t("dashboard.cropImage")}</label>
+          <label>{t("dashboard.temperature")}</label>
           <input
-            type="file"
-            name="cropImage"
-            accept="image/*"
+            type="number"
+            name="temperature"
+            value={formData.temperature}
             onChange={handleChange}
             required
           />
 
-          <label>{t("dashboard.farmLocation")}</label>
+          <label>{t("dashboard.humidity")}</label>
           <input
-            type="text"
-            name="farmLocation"
-            value={formData.farmLocation}
+            type="number"
+            name="humidity"
+            value={formData.humidity}
             onChange={handleChange}
             required
           />
 
-          <label>{t("dashboard.additionalDetails")}</label>
-          <textarea
-            name="additionalDetails"
-            rows="4"
-            value={formData.additionalDetails}
+          <label>{t("dashboard.rainfall")}</label>
+          <input
+            type="number"
+            name="rainfall"
+            value={formData.rainfall}
             onChange={handleChange}
-          ></textarea>
+            required
+          />
 
           <button type="submit" className="submit-btn">
             {t("dashboard.submit")}
