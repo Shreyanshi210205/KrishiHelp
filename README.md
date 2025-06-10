@@ -1,6 +1,6 @@
 # 🌾 KrishiHelp
 
-KrishiHelp is an agriculture-focused web platform designed to assist farmers and agri-enthusiasts in analyzing their agricultural practices, accessing smart tools, and receiving intelligent recommendations — all in one place.
+KrishiHelp is a sustainable agriculture platform dedicated to empowering farmers and agri-enthusiasts with eco-friendly insights and smart tools. By promoting climate-resilient practices, resource-efficient farming, and data-driven analysis, KrishiHelp helps users make informed decisions that nurture both their crops and the environment. From personalized recommendations to green-tech tools, everything you need for smarter, cleaner farming — all in one place.
 
 ---
 
