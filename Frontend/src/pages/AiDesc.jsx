@@ -34,7 +34,7 @@ function AiDesc() {
         </div>
       </div>
 
-      <button className="start-btn" onClick={() => navigate("/ai")}>
+      <button className="start-btn" onClick={() => navigate("/dashboard")}>
         {t("ai_farm_advisor.start_using")}
       </button>
     </div>

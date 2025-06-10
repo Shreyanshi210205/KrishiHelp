@@ -11,7 +11,11 @@ const Chatbot = () => {
           👋 {t("chatbot.greeting1")} <span className="highlight">{t("chatbot.name")}</span>
         </h1>
         <p>{t("chatbot.description")}</p>
-        <button className="chatbot-btn">{t("chatbot.button")}</button>
+        <a href="https://huggingface.co/spaces/saumyaai/hackaifarming">
+        <button className="chatbot-btn">{t("chatbot.button")}
+
+        </button>
+        </a>
       </div>
     </div>
   );
